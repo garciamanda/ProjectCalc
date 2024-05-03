@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: linear-gradient(to left, red, purple, orange);
+    animation: animado 3s alternate infinite;
+    background-size: 500% 100%;
+    flex-direction: column;
+}
+
+input {
+    border: none;
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    font-family: inherit;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 34px;
+    color: #fff;
+}
+
+.teclado {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    background-color: #69077c;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+input[type=button] {
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    height: 80px;
+    width: 80px;
+}
+
+input[type=box] {
+    background-color: #ad00c4;
+    border-radius: 10px;
+    font-family: monospace;
+    font-size: 22px;
+    height: 70px;
+    margin-bottom: 24px;
+    padding: 10px;
+    text-align: center;
+    width: 280px;
+}
+
+@keyframes animado {
+    0%{
+        background-position-x: 0%;
+    }
+    100%{
+        background-position-y: 100%;
+    }
+}
